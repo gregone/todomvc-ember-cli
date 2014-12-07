@@ -1,1 +1,5 @@
-{{outlet}}
+<ul id='todo-list'>
+  {{#each}}
+    {{todo-item todo=this}}
+  {{/each}}
+</ul>

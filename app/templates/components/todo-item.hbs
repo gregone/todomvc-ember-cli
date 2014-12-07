@@ -1,6 +1,5 @@
 {{#with todo}}
 <li {{bind-attr class='completed:todo-completed isEditing:editing'}}>
-  {{!-- TODO: Turn this into a component --}}
   {{input type='checkbox' class='toggle' checked=completed}}
   {{#if isEditing}}
     {{input type='text' class='edit' value=title}}

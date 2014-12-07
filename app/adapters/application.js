@@ -1,3 +1,4 @@
+import Ember from "ember";
 import DS from 'ember-data';
 // We use the localForage adapter instead of the default
 // RESTAdapter

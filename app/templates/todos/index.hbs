@@ -1,5 +1,5 @@
-{{outlet}}
 <ul id='todo-list'>
-{{#each}}
-  {{todo-item todo=this}}
-{{/each}}
+  {{#each model}}
+    {{todo-item todo=this}}
+  {{/each}}
+</ul>
