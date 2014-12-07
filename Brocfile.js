@@ -17,4 +17,11 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+// Import the TodoMVC assets
+app.import('bower_components/todomvc-common/base.css');
+app.import('bower_components/todomvc-common/bg.png', {
+  destDir: 'assets'
+});
+
+
 module.exports = app.toTree();
