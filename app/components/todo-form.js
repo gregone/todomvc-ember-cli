@@ -8,6 +8,9 @@ export default Ember.Component.extend({
     saveTodo: function(){
       var todoTitle = this.get('newTodo');
       console.log(todoTitle);
+      console.log(this.store);
+      debugger;
+      this.store = this.get('targetObject.store');
       this.store.createRecord('todo', {
         title: todoTitle,
         completed: false
