@@ -1,0 +1,12 @@
+{{#with todo}}
+<li {{bind-attr class='completed:todo-completed isEditing:editing'}}>
+  {{!-- TODO: Turn this into a component --}}
+  {{input type='checkbox' class='toggle' checked=completed}}
+  {{#if isEditing}}
+    {{input type='text' class='edit' value=title}}
+  {{else}}
+    <label {{action 'editTodo' on='doubleClick'}}>{{title}}</label>
+    <button class='destroy' {{action 'destroyTodo' on 'click'}}></button>
+  {{/if}}
+</li>
+{{/with}}
