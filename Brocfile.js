@@ -23,5 +23,8 @@ app.import('bower_components/todomvc-common/bg.png', {
   destDir: 'assets'
 });
 
+// Import Our Ember addons
+app.import('bower_components/localforage/dist/localforage.js');
+app.import('bower_components/ember-localforage-adapter/localforage_adapter.js');
 
 module.exports = app.toTree();
