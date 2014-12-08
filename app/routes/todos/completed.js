@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   controllerName: 'todos.index',
-  model: function(params){
+  model: function(){
     return this.store.find('todo', {completed: true});
   }
 });

@@ -4,5 +4,6 @@ import DS from 'ember-data';
 // RESTAdapter
 
 export default DS.LFAdapter.extend({
-  namespace: 'todomvc'
+  namespace: 'todomvc',
+  caching: 'none'
 });

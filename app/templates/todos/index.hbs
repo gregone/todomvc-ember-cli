@@ -3,3 +3,6 @@
     {{todo-item todo=this}}
   {{/each}}
 </ul>
+{{#with model}}
+  {{todo-footer model=model completed=completed remaining=remaining}}
+{{/with}}
