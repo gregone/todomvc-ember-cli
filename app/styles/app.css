@@ -1,3 +1,8 @@
 #filters a.active{
   font-weight: bold;
 }
+
+#todo-list{
+  position: relative;
+  z-index: 100;
+}
