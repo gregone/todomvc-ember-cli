@@ -1,6 +1,6 @@
 # Todomvc-ember-cli
 
-The TodoMVC app, rebuilt with Emeber-CLI.
+The TodoMVC app, rebuilt with Ember-CLI, using a [localForage Adapter ](https://github.com/genkgo/ember-localforage-adapter).
 
 **Note**: This is still WIP, and far from perfect...
 
